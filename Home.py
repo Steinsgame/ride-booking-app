@@ -24,12 +24,12 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.image(book_img, use_container_width=True)
     if st.button("🚗 Book a Trip"):
-        st.switch_page("Pages/ride_booking_app.py")
+        st.switch_page("pages/ride_booking_app.py")  # lowercase "pages"
 
 with col2:
     st.image(details_img, use_container_width=True)
     if st.button("📋 View Trip Details"):
-        st.switch_page("Pages/2_📋_Trip_Details.py")
+        st.switch_page("pages/Trip_Details.py")  # lowercase "pages"
 
 with col3:
     st.image(support_img, use_container_width=True)
