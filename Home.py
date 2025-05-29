@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import os
+from streamlit_extras.switch_page_button import switch_page
 
 # Set page config
 st.set_page_config(page_title="RideEase Home", page_icon="🚖", layout="wide")
@@ -23,12 +24,15 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.image(book_img, use_container_width=True)
-    st.markdown("### 🚗 [Book a Trip](./ride_booking_app)", unsafe_allow_html=True)
+    if st.button("🚗 Book a Trip"):
+        switch_page("ride_booking_app")
 
 with col2:
     st.image(details_img, use_container_width=True)
-    st.markdown("### 📋 [View Trip Details](./2📋_Trip_Details)", unsafe_allow_html=True)
+    if st.button("📋 View Trip Details"):
+        switch_page("2📋_Trip_Details")  # exact name of the file without `.py`
 
 with col3:
     st.image(support_img, use_container_width=True)
-    st.markdown("### 💬 [Contact Support](https://www.linkedin.com/in/joseph-fadero/)", unsafe_allow_html=True)
+    if st.button("💬 Contact Support"):
+        st.markdown("[Visit my LinkedIn](https://www.linkedin.com/in/joseph-fadero/)", unsafe_allow_html=True)
