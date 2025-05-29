@@ -23,15 +23,12 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.image(book_img, use_container_width=True)
-    if st.button("🚗 Book a Trip"):
-        st.switch_page("Pages/ride_booking_app.py")
+    st.markdown("### 🚗 [Book a Trip](./ride_booking_app)", unsafe_allow_html=True)
 
 with col2:
     st.image(details_img, use_container_width=True)
-    if st.button("📋 View Trip Details"):
-        st.switch_page("Pages/_Trip_Details.py")
+    st.markdown("### 📋 [View Trip Details](./2📋_Trip_Details)", unsafe_allow_html=True)
 
 with col3:
     st.image(support_img, use_container_width=True)
-    if st.button("💬 Contact Support"):
-        st.markdown("[Visit my LinkedIn](https://www.linkedin.com/in/joseph-fadero/)", unsafe_allow_html=True)
+    st.markdown("### 💬 [Contact Support](https://www.linkedin.com/in/joseph-fadero/)", unsafe_allow_html=True)
