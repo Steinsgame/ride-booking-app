@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="RideEase Home", page_icon="🚖", layout="wide")
 
 # Load images
-img_path = "assets"
+img_path = "Assets"
 book_img = Image.open(os.path.join(img_path, "booking.png"))
 details_img = Image.open(os.path.join(img_path, "details.png"))
 support_img = Image.open(os.path.join(img_path, "support.png"))
