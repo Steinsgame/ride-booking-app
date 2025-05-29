@@ -29,7 +29,7 @@ with col1:
 with col2:
     st.image(details_img, use_container_width=True)
     if st.button("📋 View Trip Details"):
-        st.switch_page("pages/Trip_Details.py")  # lowercase "pages"
+        st.switch_page("Pages/_Trip_Details.py")  # lowercase "pages"
 
 with col3:
     st.image(support_img, use_container_width=True)
