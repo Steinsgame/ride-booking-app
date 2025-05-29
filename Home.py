@@ -22,16 +22,16 @@ st.markdown("<br><br>", unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.image(book_img, use_container_width=True)
+    st.image(book_img, use_column_width=True)  # Changed to use_column_width
     if st.button("🚗 Book a Trip"):
-        st.switch_page("pages/ride_booking_app.py")  # lowercase "pages"
+        st.switch_page("pages/ride_booking_app.py")  # Ensure file exists with this exact name
 
 with col2:
-    st.image(details_img, use_container_width=True)
+    st.image(details_img, use_column_width=True)
     if st.button("📋 View Trip Details"):
-        st.switch_page("pages/Trip_Details.py")  # lowercase "pages"
+        st.switch_page("pages/2📋_Trip_Details.py")  # Fixed typo, ensure file exists
 
 with col3:
-    st.image(support_img, use_container_width=True)
+    st.image(support_img, use_column_width=True)
     if st.button("💬 Contact Support"):
         st.markdown("[Visit my LinkedIn](https://www.linkedin.com/in/joseph-fadero/)", unsafe_allow_html=True)
