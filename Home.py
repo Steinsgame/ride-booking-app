@@ -24,12 +24,12 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.image(book_img, use_container_width=True)
     if st.button("🚗 Book a Trip"):
-        st.switch_page("Pages/ride_booking_app.py")
+        st.switch_page("pages/ride_booking_app.py")
  
 with col2:
     st.image(details_img, use_container_width=True)
     if st.button("📋 View Trip Details"):
-        st.switch_page("Pages/_Trip_Details.py")
+        st.switch_page("pages/_Trip_Details.py")
  
 with col3:
     st.image(support_img, use_container_width=True)
